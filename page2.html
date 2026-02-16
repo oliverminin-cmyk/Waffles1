@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>peripherals</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #ddd;
+            font-family: Arial;
+            margin: 20px;
+        }
+        
+        h1 {
+            color: orange;
+        }
+        
+        img {
+            width: 250px;
+        }
+        
+        ul {
+            line-height: 1.8;
+        }
+        
+        button {
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Peripherals</h1>
+    
+    <img src="https://images.unsplash.com/photo-1527814050087-3793815479db?w=500" alt="keyboard and mouse">
+    
+    <h2>What I Use</h2>
+    <ul>
+        <li>Keyboard: Corsair K70 RGB</li>
+        <li>Mouse: Logitech G502</li>
+        <li>Headset: HyperX Cloud II</li>
+        <li>Monitor: 144hz 1080p</li>
+        <li>Mousepad: SteelSeries QcK</li>
+    </ul>
+    
+    <h3>Total Cost</h3>
+    <p id="cost">Click to see</p>
+    <button onclick="showCost()">show total</button>
+    
+    <br><br>
+    <a href="index.html">back to setup</a>
+    
+    <script>
+        function showCost() {
+            var costText = document.getElementById('cost');
+            if (costText.textContent === 'Click to see') {
+                costText.textContent = 'Around $350 for everything';
+            } else {
+                costText.textContent = 'Click to see';
+            }
+        }
+    </script>
+</body>
+</html>

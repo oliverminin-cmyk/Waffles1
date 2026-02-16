@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>my gaming setup</title>
+    <style>
+        body {
+            background-color: #222;
+            color: white;
+            font-family: Arial;
+            margin: 20px;
+        }
+        
+        h1 {
+            color: lightblue;
+        }
+        
+        img {
+            width: 300px;
+        }
+        
+        button {
+            padding: 10px;
+            margin: 5px;
+        }
+        
+        .specs {
+            background-color: #333;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Gaming Setup</h1>
+    
+    <img src="https://images.unsplash.com/photo-1587202372634-32705e3bf49c?w=500" alt="gaming setup">
+    
+    <div class="specs">
+        <h2>PC Specs</h2>
+        <p>CPU: AMD Ryzen 5 5600X</p>
+        <p>GPU: RTX 3060 Ti</p>
+        <p>RAM: 16GB DDR4</p>
+        <p>Storage: 1TB NVMe SSD</p>
+    </div>
+    
+    <h3>Games I Play</h3>
+    <p>Valorant, Apex Legends, Minecraft, Elden Ring</p>
+    
+    <button onclick="changeColor()">change background</button>
+    <button onclick="showText()">show fps</button>
+    
+    <p id="hiddenText"></p>
+    
+    <br><br>
+    <a href="page2.html">my peripherals</a>
+    
+    <script>
+        function changeColor() {
+            if (document.body.style.backgroundColor === 'rgb(34, 34, 34)' || document.body.style.backgroundColor === '') {
+                document.body.style.backgroundColor = '#111';
+            } else {
+                document.body.style.backgroundColor = '#222';
+            }
+        }
+        
+        function showText() {
+            var text = document.getElementById('hiddenText');
+            if (text.textContent === '') {
+                text.textContent = 'Average FPS: 144';
+            } else {
+                text.textContent = '';
+            }
+        }
+    </script>
+</body>
+</html>
